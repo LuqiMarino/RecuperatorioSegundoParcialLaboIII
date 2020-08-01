@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Clases/Persona.js"></script>
+    <script src="./Clases/Cliente.js"></script>
+    <script src="./Clases/main.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Parcial Lucas Marino</title>
+</head>
+<body>
+    <h1>ABM Personas</h1><hr>
+
+        <label>ID: </label>
+        <input type="text" id="txtID" disabled></br>
+        <label>Nombre: </label>
+        <input type="text" id="txtNombre"></br>
+        <label>Apellido: </label>
+        <input type="text" id="txtApellido"></br>
+        <label>Edad: </label>
+        <input type="number" min="1" id="txtEdad"></br>
+        <label>Sexo:</label>
+        <select name="slcSexo" id="slcSexo">
+            <option value="Masculino">Masculino</option> 
+            <option value="Femenino">Femenino</option>
+        </select></br>        
+        <button class="btnAgregar" id="btnAgregar">Agregar</button>
+        <button class="btnEliminar" id="btnEliminar">Eliminar</button>
+        <button class="btnLimpiar" id="btnLimpiar">Limpiar Tabla</button>
+
+        <hr><h1>Filtros</h1><hr>
+        <label>Filtrar por: </label>
+        <select name="slcFiltro" id="slcFiltro">
+            <option value="Ambos">Ambos</option>
+            <option value="Masculino">Masculino</option> 
+            <option value="Femenino">Femenino</option>
+        </select></br>
+        <label>Promedio de edad: </label>
+        <input type="text" id="txtPromedio" class="txtPromedio" disabled>
+        <button class="btnCalcularPromedio" id="btnCalcularPromedio">Calcular Promedio</button></br>
+
+        <hr><h3>Campos Mostrados</h3>
+        <input type="checkbox" id="chkID" checked> <label>ID</label>
+        <input type="checkbox" id="chkNombre" checked> <label>Nombre</label>
+        <input type="checkbox" id="chkApellido" checked> <label>Apellido</label>
+        <input type="checkbox" id="chkEdad" checked> <label>Edad</label>
+        <input type="checkbox" id="chkSexo" checked> <label>Sexo</label></br></br>
+    
+
+    <hr><h1>Listado de Vehiculos</h1><hr>
+    <!-- TABLA -->
+    <table>
+        <thead>
+            <th name="idTabla">ID</th>
+            <th name="nombreTabla">Nombre</th>
+            <th name="apellidoTabla">Apellido</th>
+            <th name="edadTabla">Edad</th>
+            <th name="sexoTabla">Sexo</th>
+        </thead>
+        <tbody id="cuerpo">
+        </tbody>
+    </table>
+    
+
+</body>
+</html>
